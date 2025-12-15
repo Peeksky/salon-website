@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Royal Salon</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Royal Salon</h1>
+    <p>Professional Beauty & Grooming Services</p>
+  </header>
+
+  <section class="hero">
+    <h2>Book Your Appointment Online</h2>
+    <a href="#booking" class="btn">Book Appointment</a>
+    <a href="https://wa.me/919999999999" class="btn whatsapp">WhatsApp</a>
+  </section>
+
+  <section class="services">
+    <h2>Our Services</h2>
+    <div class="card"><h3>Hair Cut</h3><p>₹300</p></div>
+    <div class="card"><h3>Facial</h3><p>₹800</p></div>
+    <div class="card"><h3>Hair Color</h3><p>₹1200</p></div>
+  </section>
+
+  <section id="booking" class="booking">
+    <h2>Book Appointment</h2>
+    <form onsubmit="bookNow(event)">
+      <input type="text" placeholder="Your Name" required>
+      <input type="tel" placeholder="Mobile Number" required>
+      <select required>
+        <option value="">Select Service</option>
+        <option>Hair Cut</option>
+        <option>Facial</option>
+        <option>Hair Color</option>
+      </select>
+      <input type="date" required>
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Royal Salon | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
